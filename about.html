@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Learn more about our story, our mission, and the team behind Mocha Moon Café."/>
+  <title>Mocha Moon Cafe | About Us</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Mocha Moon</h1>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="menu-page">
+      <h2>Our Story</h2>
+      <p>Born under the Oslo moon in 2021, Mocha Moon Cafe began as a dream — a dream to create a space where night owls, creatives, and coffee lovers could gather and feel at home.</p>
+      <p>Our passion lies in the little things: slow-steeped brews, fresh pastries, and conversations that stretch into the evening hours. Whether you’re journaling, studying, dating, or decompressing — you’re always welcome at Mocha Moon</p>
+
+      <h3 style="margin-top: 2.5rem;">Meet the Team</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Linda – Head Barista</h4>
+          <p>Coffee wizard with a heart for latte art and storytelling.</p>
+        </article>
+        <article class="card">
+          <h4>Gordon Ramsay – Manager</h4>
+          <p>Always organizing, always yelling. Master of making you lose it.</p>
+        </article>
+        <article class="card">
+          <h4>Scott – Baker</h4>
+          <p>Bald and angry, but makes really good dough.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mocha Moon Cafe. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
